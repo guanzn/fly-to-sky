@@ -58,7 +58,7 @@
 /* Instead of using the standard TWI driver from the ASF library, we're using
  * a TWI driver that follows the slave address + register address convention.
  */
-#include "delay.h"
+//#include "delay.h"
 #include "sysclk.h"
 #include "log.h"
 #include "uc3l0_clock.h"

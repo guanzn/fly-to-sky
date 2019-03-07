@@ -51,12 +51,12 @@ void USART1_IRQHandler(void)                	//串口1中断服务程序
 	{
 	u8 Res,i;
 	if(USART_GetITStatus(USART1, USART_IT_ORE) != RESET)  //接收中断
-//	{USART_ReceiveData(USART1);}
+	{USART_ReceiveData(USART1);}
 	if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断
 		{
 			Res =USART_ReceiveData(USART1);	//读取接收到的数据
 			usart1_send_char(Res);
-/*			switch(RecState)
+			switch(RecState)
 			{
 					case HEAD1:
 							if(Res == 0xAA)
@@ -162,7 +162,7 @@ void USART1_IRQHandler(void)                	//串口1中断服务程序
 							
 					}
 					
-				}*/
+				}
    		 
      } 
 } 

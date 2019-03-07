@@ -1,5 +1,9 @@
 #include "systick.h"
-
+void delay(u32 i)
+{
+		
+		while(i--);  //6000000大概一秒
+}
 void delay_us(u32 i)  //最大延时为1864135us
 {
 		u32 temp;

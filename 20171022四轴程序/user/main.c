@@ -38,7 +38,7 @@ int main()
 	LED_Display();
 	PWM_Init();
   NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);	 //设置NVIC中断分组2:2位抢占优先级，2位响应优先级
-	USART1_Init(115200);
+	USART1_Init(9600);
 	MPU_Init();				//初始化MPU6050 
 	while(mpu_dmp_init()){}
 	LED_Display();
@@ -46,20 +46,15 @@ int main()
  		
 	while(1)
 	{
-//			if(mpu_dmp_get_data(&pitch,&roll,&yaw)==0)
-//			{
-//				Data_Send_Status(pitch,roll,yaw);
-//				delay_ms(100);
-//			}
-//		u16 batV;
-//		batV = adc_bat(50,10)*100;   //实际电压的一半，所得数值放大100倍
-//		usart1_send_char(0xAA);
-//		usart1_send_char(0x5A);
-//		usart1_send_char(01);
-//		usart1_send_char(batV%256);
-//		usart1_send_char(batV%256);
-//		usart1_send_char(0x4D);
-		delay_ms(500);
+		u16 batV;
+		batV = adc_bat(50)*100;   //实际电压的一半，所得数值放大100倍
+		usart1_send_char(0xAA);
+		usart1_send_char(0x5A);
+		usart1_send_char(01);
+		usart1_send_char(batV%256);
+		usart1_send_char(batV%256);
+		usart1_send_char(0x4D);
+		delay(50000);
 			
 	}
 	

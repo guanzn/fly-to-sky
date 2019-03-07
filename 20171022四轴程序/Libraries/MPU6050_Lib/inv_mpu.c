@@ -91,7 +91,7 @@ static inline int reg_int_cb(struct int_param_s *int_param)
  * a TWI driver that follows the slave address + register address convention.
  */
 #include "twi.h"
-#include "delay.h"
+//#include "delay.h"
 #include "sysclk.h"
 #include "log.h"
 #include "sensors_xplained.h"
