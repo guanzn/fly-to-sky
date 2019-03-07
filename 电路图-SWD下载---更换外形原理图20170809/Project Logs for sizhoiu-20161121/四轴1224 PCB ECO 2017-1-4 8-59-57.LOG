@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=NetC7_2 Pin=U2-2
+Removed Pin From Net: NetName=GND Pin=U2-3
+Removed Pin From Net: NetName=NetC15_2 Pin=U5-2
+Removed Pin From Net: NetName=GND Pin=U5-3
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Pin To Net: NetName=NetC7_2 Pin=U2-3
+Added Pin To Net: NetName=GND Pin=U5-2
+Added Pin To Net: NetName=NetC15_2 Pin=U5-3
+Added Member To Class: ClassName=四轴1004 Member=Component C22 Cap
+Added Member To Class: ClassName=四轴1004 Member=Component P3 Header 2
+Added Member To Class: ClassName=四轴1004 Member=Component P5 Header 2
+Added Member To Class: ClassName=四轴1004 Member=Component P6 Header 2
+Added Member To Class: ClassName=四轴1004 Member=Component R15 Res1
+Added Member To Class: ClassName=四轴1004 Member=Component R17 Res1

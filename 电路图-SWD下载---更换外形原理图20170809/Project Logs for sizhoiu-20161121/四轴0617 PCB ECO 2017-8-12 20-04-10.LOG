@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=6050_SCL Pin=U2-27
+Removed Pin From Net: NetName=6050_SDA Pin=U2-28
+Added Pin To Net: NetName=6050_SDA Pin=U2-27
+Added Pin To Net: NetName=6050_SCL Pin=U2-28

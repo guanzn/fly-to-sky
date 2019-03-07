@@ -1,0 +1,74 @@
+Removed Pin From Net: NetName=5V_B Pin=C19-1
+Removed Pin From Net: NetName=GND Pin=C19-2
+Removed Pin From Net: NetName=5V_B Pin=C20-1
+Removed Pin From Net: NetName=GND Pin=C20-2
+Removed Pin From Net: NetName=GND Pin=C21-1
+Removed Pin From Net: NetName=GND Pin=C26-1
+Removed Pin From Net: NetName=GND Pin=C27-1
+Removed Pin From Net: NetName=3.3V Pin=C28-2
+Removed Pin From Net: NetName=1_RX Pin=DV1-1
+Removed Pin From Net: NetName=5V Pin=H1-1
+Removed Pin From Net: NetName=GND Pin=H1-5
+Removed Pin From Net: NetName=3.3V Pin=Q5-1
+Removed Pin From Net: NetName=BOOT0 Pin=Q5-3
+Removed Pin From Net: NetName=RSET Pin=Q10-1
+Removed Pin From Net: NetName=GND Pin=Q10-3
+Removed Pin From Net: NetName=GND Pin=R11-1
+Removed Pin From Net: NetName=BOOT0 Pin=R11-2
+Removed Pin From Net: NetName=GND Pin=U7-1
+Removed Pin From Net: NetName=1_TX Pin=U7-3
+Removed Pin From Net: NetName=5V_B Pin=U7-16
+Removed Member From Class: ClassName=四轴1004 Member=C23
+Removed Member From Class: ClassName=四轴1004 Member=C24
+Removed Member From Class: ClassName=四轴1004 Member=C25
+Removed Member From Class: ClassName=四轴1004 Member=C26
+Removed Member From Class: ClassName=四轴1004 Member=C27
+Removed Member From Class: ClassName=四轴1004 Member=C28
+Removed Member From Class: ClassName=四轴1004 Member=DV1
+Removed Member From Class: ClassName=四轴1004 Member=H1
+Removed Member From Class: ClassName=四轴1004 Member=Q9
+Removed Member From Class: ClassName=四轴1004 Member=Q10
+Removed Member From Class: ClassName=四轴1004 Member=R18
+Removed Member From Class: ClassName=四轴1004 Member=R19
+Removed Member From Class: ClassName=四轴1004 Member=R20
+Removed Member From Class: ClassName=四轴1004 Member=U7
+Removed Member From Class: ClassName=四轴1004 Member=Y2
+Change Component Designator: OldDesignator=C22 NewDesignator=C19
+Change Component Designator: OldDesignator=C23 NewDesignator=C20
+Change Component Designator: OldDesignator=C24 NewDesignator=C21
+Change Component Designator: OldDesignator=C25 NewDesignator=C22
+Change Component Designator: OldDesignator=Q6 NewDesignator=Q5
+Change Component Designator: OldDesignator=Q7 NewDesignator=Q6
+Change Component Designator: OldDesignator=Q8 NewDesignator=Q7
+Change Component Designator: OldDesignator=Q9 NewDesignator=Q8
+Change Component Designator: OldDesignator=R2 NewDesignator=R8
+Change Component Designator: OldDesignator=R3 NewDesignator=R13
+Change Component Designator: OldDesignator=R4 NewDesignator=R2
+Change Component Designator: OldDesignator=R5 NewDesignator=R3
+Change Component Designator: OldDesignator=R6 NewDesignator=R4
+Change Component Designator: OldDesignator=R7 NewDesignator=R5
+Change Component Designator: OldDesignator=R8 NewDesignator=R6
+Change Component Designator: OldDesignator=R9 NewDesignator=R7
+Change Component Designator: OldDesignator=R12 NewDesignator=R9
+Change Component Designator: OldDesignator=R13 NewDesignator=R10
+Change Component Designator: OldDesignator=R14 NewDesignator=R11
+Change Component Designator: OldDesignator=R15 NewDesignator=R12
+Change Component Designator: OldDesignator=R17 NewDesignator=R14
+Change Component Designator: OldDesignator=R18 NewDesignator=R15
+Change Component Designator: OldDesignator=R19 NewDesignator=R16
+Change Component Designator: OldDesignator=R20 NewDesignator=R17
+Added Component: Designator=J2(HDR1X4)
+Added Pin To Net: NetName=3.3V Pin=J2-1
+Added Pin To Net: NetName=GND Pin=J2-2
+Change Net Name : Old Net Name=NetQ6_1 New Net Name=NetQ5_1
+Change Net Name : Old Net Name=NetQ7_1 New Net Name=NetQ6_1
+Change Net Name : Old Net Name=NetQ8_1 New Net Name=NetQ7_1
+Change Net Name : Old Net Name=NetQ9_1 New Net Name=NetQ8_1
+Added Pin To Net: NetName=SWCLK Pin=J2-4
+Added Pin To Net: NetName=SWCLK Pin=U3-37
+Added Net: Name=SWCLK
+Added Pin To Net: NetName=SWDIO Pin=J2-3
+Added Pin To Net: NetName=SWDIO Pin=U3-34
+Added Net: Name=SWDIO
+Added Member To Class: ClassName=四轴1004 Member=Component J2 Header 4
+Added Room: Name=四轴1004

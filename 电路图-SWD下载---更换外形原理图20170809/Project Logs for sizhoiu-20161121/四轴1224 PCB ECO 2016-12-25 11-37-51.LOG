@@ -1,0 +1,16 @@
+Added Component: Designator=U7(SOP-16)
+Added Pin To Net: NetName=GND Pin=U7-1
+Added Pin To Net: NetName=NetDV1_2 Pin=U7-2
+Added Pin To Net: NetName=1_TX Pin=U7-3
+Added Pin To Net: NetName=NetC21_2 Pin=U7-4
+Added Pin To Net: NetName=D+ Pin=U7-5
+Added Pin To Net: NetName=D- Pin=U7-6
+Added Pin To Net: NetName=NetC26_2 Pin=U7-7
+Added Pin To Net: NetName=NetC27_2 Pin=U7-8
+Added Pin To Net: NetName=NetR16_2 Pin=U7-13
+Added Pin To Net: NetName=NetR10_1 Pin=U7-14
+Added Pin To Net: NetName=5V_B Pin=U7-16
+Added Pin To Net: NetName=6050_INT Pin=U3-41
+Added Net: Name=6050_INT
+Added Member To Class: ClassName=Àƒ÷·1004 Member=Component U7 CH340G
+Added Room: Name=Àƒ÷·1004

@@ -1,0 +1,5 @@
+Added Component: Designator=U2(LQFP48)
+Added Pin To Net: NetName=3.3V Pin=U2-1
+Added Pin To Net: NetName=OSC32_IN Pin=U2-3
+Added Pin To Net: NetName=OSC_32OUT Pin=U2-4
+Added Member To Class: ClassName=Àƒ÷·1004 Member=Component U2 TM32F103C8T6

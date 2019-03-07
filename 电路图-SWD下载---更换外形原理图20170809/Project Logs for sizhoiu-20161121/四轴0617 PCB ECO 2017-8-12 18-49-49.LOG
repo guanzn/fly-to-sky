@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=3.3V Pin=U2-41
+Removed Pin From Net: NetName=3.3V Pin=U5-12
+Added Component: Designator=R18(J1-0603)
+Added Pin To Net: NetName=3.3V Pin=R18-1
+Added Pin To Net: NetName=6050_INT Pin=R18-2
+Added Pin To Net: NetName=6050_INT Pin=U2-41
+Added Pin To Net: NetName=6050_INT Pin=U5-12
+Added Net: Name=6050_INT
+Added Member To Class: ClassName=Àƒ÷·1004 Member=Component R18 Res1

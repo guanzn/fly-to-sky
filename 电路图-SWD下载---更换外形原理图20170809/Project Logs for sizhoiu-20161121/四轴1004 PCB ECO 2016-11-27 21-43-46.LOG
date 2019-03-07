@@ -1,0 +1,17 @@
+Change Component Footprint: Designator=Q1 Old Footprint=SOT23 New Footprint=SOT-23
+Change Component Footprint: Designator=Q2 Old Footprint=SOT23 New Footprint=SOT-23
+Change Component Footprint: Designator=Q3 Old Footprint=SOT23 New Footprint=SOT-23
+Change Component Footprint: Designator=Q4 Old Footprint=SOT23 New Footprint=SOT-23
+Added Pin To Net: NetName=NetQ1_1 Pin=Q1-1
+Added Pin To Net: NetName=M1 Pin=Q1-2
+Added Pin To Net: NetName=GND Pin=Q1-3
+Added Pin To Net: NetName=NetQ2_1 Pin=Q2-1
+Added Pin To Net: NetName=M2 Pin=Q2-2
+Added Pin To Net: NetName=GND Pin=Q2-3
+Added Pin To Net: NetName=NetQ3_1 Pin=Q3-1
+Added Pin To Net: NetName=M2 Pin=Q3-2
+Added Pin To Net: NetName=GND Pin=Q3-3
+Added Pin To Net: NetName=NetQ4_1 Pin=Q4-1
+Added Pin To Net: NetName=M2 Pin=Q4-2
+Added Pin To Net: NetName=GND Pin=Q4-3
+Added Room: Name=Àƒ÷·1004

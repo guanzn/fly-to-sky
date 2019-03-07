@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=M2 Pin=C21-1
+Removed Pin From Net: NetName=M2 Pin=C22-1
+Removed Pin From Net: NetName=M2 Pin=D7-1
+Removed Pin From Net: NetName=M2 Pin=D8-1
+Removed Pin From Net: NetName=M2 Pin=Q4-2
+Removed Pin From Net: NetName=M2 Pin=Q5-2
+Added Pin To Net: NetName=M3 Pin=C21-1
+Added Pin To Net: NetName=M4 Pin=C22-1
+Added Pin To Net: NetName=M3 Pin=D7-1
+Added Pin To Net: NetName=M4 Pin=D8-1
+Added Pin To Net: NetName=M3 Pin=Q4-2
+Added Pin To Net: NetName=M4 Pin=Q5-2
+Added Member To Class: ClassName=ËÄÖá1004 Member=Component D8 1N4148
+Added Member To Class: ClassName=ËÄÖá1004 Member=Component R2 Res1
+Added Member To Class: ClassName=ËÄÖá1004 Member=Component R4 Res1

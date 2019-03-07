@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=GND Pin=P1-2
+Removed Pin From Net: NetName=5V_B Pin=P2-1
+Removed Pin From Net: NetName=GND Pin=P2-2
+Removed Member From Class: ClassName=四轴1004 Member=P7
+Removed Member From Class: ClassName=四轴1004 Member=P8
+Change Component DesignItemId : Designator=P1 Old DesignItemId=Header 2 New DesignItemId=Header 3
+Change Component Footprint: Designator=P1 Old Footprint=HDR1X2 New Footprint=HDR1X3
+Change Component Comment : Designator=P1 Old Comment=Header 2 New Comment=5V==5V_B
+Change Component Designator: OldDesignator=P3 NewDesignator=P2
+Change Component Designator: OldDesignator=P5 NewDesignator=P3
+Change Component Designator: OldDesignator=P6 NewDesignator=P4
+Change Component Designator: OldDesignator=P7 NewDesignator=P5
+Change Component Designator: OldDesignator=P8 NewDesignator=P6
+Added Pin To Net: NetName=5V Pin=P1-2
+Added Pin To Net: NetName=5V_B Pin=P1-3
+Added Member To Class: ClassName=四轴1004 Member=Component C20 Cap
+Added Member To Class: ClassName=四轴1004 Member=Component C21 Cap
+Added Member To Class: ClassName=四轴1004 Member=Component C22 Cap
+Added Member To Class: ClassName=四轴1004 Member=Component Q8 AO3402
+Added Member To Class: ClassName=四轴1004 Member=Component R15 Res1
+Added Member To Class: ClassName=四轴1004 Member=Component R16 Res1
+Added Member To Class: ClassName=四轴1004 Member=Component R17 Res1
