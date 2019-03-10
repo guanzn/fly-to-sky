@@ -129,17 +129,17 @@ void USART1_IRQHandler(void)                	//串口1中断服务程序
 					switch(LengthTotal) 
 					{
 							case 1:
-									acc = USART_RX_BUF[0]*100;
+									acc = USART_RX_BUF[0]*50;
 									DirectX = 100;
 									DirectY = 100;
 									break;
 							case 3:
-									acc = USART_RX_BUF[0]*100;
+									acc = USART_RX_BUF[0]*50;
 									DirectX = USART_RX_BUF[1];
 									DirectY = USART_RX_BUF[2];
 									break;
 							case 10:
-									acc = USART_RX_BUF[0]*100;
+									acc = USART_RX_BUF[0]*50;
 									DirectX = 100;
 									DirectY = 100;
 									x_pitch.kp = USART_RX_BUF[1]/10.0;
@@ -150,7 +150,7 @@ void USART1_IRQHandler(void)                	//串口1中断服务程序
 									y_roll.kd = USART_RX_BUF[6]/10.0;
 									break;
 							case 12:
-									acc = USART_RX_BUF[0]*100;
+									acc = USART_RX_BUF[0]*50;
 									DirectX = USART_RX_BUF[1];
 									DirectY = USART_RX_BUF[2];
 									x_pitch.kp = USART_RX_BUF[3]/10.0;

@@ -22,12 +22,12 @@ u8 DirectY=100;
 
 int main()	
 {
-	x_pitch.kp = 4;
+	x_pitch.kp = 6;
 	x_pitch.ki = 0;
-	x_pitch.kd = 20;
-	y_roll.kp = 3;
+	x_pitch.kd = 10;
+	y_roll.kp = 6;
 	y_roll.ki = 0;
-	y_roll.kd = 15;
+	y_roll.kd = 10;
 	z_yaw.kd =2;
 	direct.kp = 2;
 	direct.ki = 0;
