@@ -1,0 +1,16 @@
+行 593: 控件 Slider1 的类 MSComctlLib.Slider 不是一个已加载的控件类。
+行 701: 控件 MSComm1 的类 MSCommLib.MSComm 不是一个已加载的控件类。
+行 600: 属性名 _ExtentX 在 Slider1 中是无效的。
+行 601: 属性名 _ExtentY 在 Slider1 中是无效的。
+行 602: 属性名 _Version 在 Slider1 中是无效的。
+行 603: 属性名 Orientation 在 Slider1 中是无效的。
+行 604: 属性名 LargeChange 在 Slider1 中是无效的。
+行 605: 属性名 SelectRange 在 Slider1 中是无效的。
+行 606: 属性名 TickStyle 在 Slider1 中是无效的。
+行 704: 属性名 _ExtentX 在 MSComm1 中是无效的。
+行 705: 属性名 _ExtentY 在 MSComm1 中是无效的。
+行 706: 属性名 _Version 在 MSComm1 中是无效的。
+行 707: 属性名 DTREnable 在 MSComm1 中是无效的。
+行 708: 属性名 InputLen 在 MSComm1 中是无效的。
+行 709: 属性名 RThreshold 在 MSComm1 中是无效的。
+行 710: 属性名 InputMode 在 MSComm1 中是无效的。
