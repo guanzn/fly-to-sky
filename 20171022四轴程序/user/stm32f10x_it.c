@@ -3,6 +3,7 @@
 #include "stm32f10x_it.h"
 #include "systick.h"
 #include "USART.h"
+#include "led.h"
 #include "motorc.h"
 #include "inv_mpu.h"
 #include "inv_mpu_dmp_motion_driver.h" 
@@ -27,23 +28,26 @@ extern u8 DirectX;
 extern u8 DirectY;
 extern struct _pid x_pitch;
 extern struct _pid y_roll;
-
 /**********中断函数*********/
 void TIM3_IRQHandler(void)//Timer3中断
 {	
+	float datapitch=0,dataroll=0,datayaw=0;	
 	if(TIM3->SR & TIM_IT_Update)
 	{     
 		TIM3->SR = ~TIM_FLAG_Update;//清除中断标志
+		if(mpu_dmp_get_data(&datapitch,&dataroll,&datayaw)==0)
+		{
+			pitch=datapitch;
+			roll=dataroll;
+			yaw=datayaw;
+		}
 		Count_1ms++;
 		Count_2ms++;
 		Count_4ms++;
   	if(Count_4ms>=4)
 		{ 
-			Count_4ms = 0;
-			if(mpu_dmp_get_data(&pitch,&roll,&yaw)==0)
-			{
+			Count_4ms = 0;			
 				balance_pid(pitch,roll,yaw);
-			}
 		}
 	}
 }
@@ -55,7 +59,6 @@ void USART1_IRQHandler(void)                	//串口1中断服务程序
 	if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断
 		{
 			Res =USART_ReceiveData(USART1);	//读取接收到的数据
-			usart1_send_char(Res);
 			switch(RecState)
 			{
 					case HEAD1:

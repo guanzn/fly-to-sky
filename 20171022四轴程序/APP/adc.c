@@ -36,11 +36,11 @@ void adc_init()
 
 	ADC_SoftwareStartConvCmd(ADC1, ENABLE);//使能或者失能指定的ADC的软件转换启动功能
 }
-
+	u32 adc;
 u8 adc_bat(u8 adc_times)
 {
 	u8 i;
-	u32 adc;
+
 	u8 adc_batV;
 	adc=0;
 	for(i=0;i<adc_times;i++)//读取50次的AD数值取其平均数较为准确	
@@ -50,8 +50,8 @@ u8 adc_bat(u8 adc_times)
 		adc = adc+ADC_GetConversionValue(ADC1);//返回最近一次ADCx规则组的转换结果		
 		delay(60000);
 	}
-	adc_batV=(u8)adc/50.0*3.3/4096;//由于锂电池供电做大4.3v，其一半电压仅2.15V，故考虑使用一个字节u8来表示电压，此处不乘以2
-	return adc_batV;
+	adc_batV=adc*2*3.3/4096.0;//由于锂电池供电最大4.3v，其一半电压仅2.15V，故考虑使用一个字节u8来表示电压，此处不乘以2
+	return adc_batV;//实际电压的一半，所得数值放大100倍
 }
 
 

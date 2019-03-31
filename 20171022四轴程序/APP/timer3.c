@@ -9,8 +9,8 @@ void Timer3_Init()
 		
 		TIM_ClearITPendingBit(TIM3, TIM_IT_Update);
 		/******   设置TIM3参数    ******/
-		TIM_InitStructure.TIM_Period = 2; //35999预分频下，2000为一秒
-		TIM_InitStructure.TIM_Prescaler = 36000 - 1; //预分频系统自动加1，故需要减一
+		TIM_InitStructure.TIM_Period = 2000; //72预分频下，1000为一毫秒
+		TIM_InitStructure.TIM_Prescaler = 72 - 1; //预分频系统自动加1，故需要减一
 		TIM_InitStructure.TIM_ClockDivision = TIM_CKD_DIV1;
 		TIM_InitStructure.TIM_CounterMode = TIM_CounterMode_Up;
 		TIM_TimeBaseInit( TIM3, &TIM_InitStructure);

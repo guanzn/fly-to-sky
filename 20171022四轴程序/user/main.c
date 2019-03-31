@@ -19,15 +19,16 @@ struct _pid direct;
 u16 acc;
 u8 DirectX =100;
 u8 DirectY=100;
+float pitch1=0,roll1=0,yaw1=0;
 
 int main()	
 {
-	x_pitch.kp = 6;
-	x_pitch.ki = 0;
-	x_pitch.kd = 10;
-	y_roll.kp = 6;
-	y_roll.ki = 0;
-	y_roll.kd = 10;
+	x_pitch.kp = 3;
+	x_pitch.ki = 1;
+	x_pitch.kd = 25;
+	y_roll.kp = 2;
+	y_roll.ki = 1;
+	y_roll.kd = 20;
 	z_yaw.kd =2;
 	direct.kp = 2;
 	direct.ki = 0;
@@ -37,6 +38,7 @@ int main()
 	LED_Init();
 	LED_Display();
 	PWM_Init();
+	adc_init();
   NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);	 //设置NVIC中断分组2:2位抢占优先级，2位响应优先级
 	USART1_Init(9600);
 	MPU_Init();				//初始化MPU6050 
@@ -47,7 +49,7 @@ int main()
 	while(1)
 	{
 		u16 batV;
-		batV = adc_bat(50)*100;   //实际电压的一半，所得数值放大100倍
+		batV = adc_bat(50);   
 		usart1_send_char(0xAA);
 		usart1_send_char(0x5A);
 		usart1_send_char(01);

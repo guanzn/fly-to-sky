@@ -18,18 +18,24 @@ void balance_pid(float pitch,float roll,float yaw)
 /* balance_pitch PID caculate   */
 	x_pitch.oldoutput=x_pitch.newoutput;
 	x_pitch.newoutput = x_pitch.kp*(pitch)+ x_pitch.ki*x_pitch.integral+x_pitch.kd*(pitch-x_pitch.oldangle);
-	x_pitch.integral += pitch; 
+	if(acc >= 300)	x_pitch.integral += pitch/100; 
+	else x_pitch.integral=0;
 	x_pitch.oldangle=pitch;
 	x_pitch.oldoutput=x_pitch.newoutput;
+	if(x_pitch.integral > 200) x_pitch.integral=200;
+	if(x_pitch.integral < -200) x_pitch.integral=-200;	
 	if(x_pitch.newoutput<-800) x_pitch.newoutput=-800;
 	if(x_pitch.newoutput>800) x_pitch.newoutput=800;
 	
 /* balance_roll PID caculate   */
 	y_roll.oldoutput=y_roll.newoutput;
 	y_roll.newoutput = y_roll.kp*(roll)+ y_roll.ki*y_roll.integral+y_roll.kd*(roll-y_roll.oldangle);
-	y_roll.integral += roll; 
+	if(acc >= 300)y_roll.integral += roll/100;
+	else y_roll.integral=0;
 	y_roll.oldangle=roll;
 	y_roll.oldoutput=y_roll.newoutput;
+	if(y_roll.integral > 200) y_roll.integral=200;
+	if(y_roll.integral < -200) y_roll.integral=-200;	
 	if(y_roll.newoutput<-800) y_roll.newoutput=-800;
 	if(y_roll.newoutput>800) y_roll.newoutput=800;
 	
@@ -45,6 +51,7 @@ void balance_pid(float pitch,float roll,float yaw)
 	if(acc<10)
 	{	
 		PWM_Output(0,0,0,0);
+		
 	}
 	else
 	{

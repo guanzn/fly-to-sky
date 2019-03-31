@@ -5,7 +5,7 @@
  //MPU IIC 延时函数
 void MPU_IIC_Delay(void)
 {
-	delay_us(2);
+	delay_us(3);
 }
 
 //初始化IIC
